@@ -6,9 +6,7 @@
   "engines": {
     "vscode": "^1.98.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "publisher": "ManitejaPratha",
   "author": {
     "name": "maniteja pratha",
     "email": "pratamaniteja66@gmail.com",
@@ -70,5 +68,27 @@
     "typescript": "^5.8.2",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "keywords": [
+    "console",
+    "log",
+    "javascript",
+    "typescript",
+    "debug",
+    "prefix"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "preview": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Manitej66/vscode-console-log-prefixer"
   }
 }
