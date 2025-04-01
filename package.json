@@ -9,15 +9,40 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "author": {
+    "name": "maniteja pratha",
+    "email": "pratamaniteja66@gmail.com",
+    "url": "https://github.com/Manitej66"
+  },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "console-prefixer.helloWorld",
-        "title": "Hello World"
+        "command": "console-log-prefixer.addPrefixes",
+        "title": "Add Prefixes to Console Logs"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Console Log Prefixer",
+      "properties": {
+        "consoleLogPrefixer.prefix": {
+          "type": "string",
+          "default": "`[mylog]`",
+          "description": "The prefix to add to console.log statements"
+        },
+        "consoleLogPrefixer.commentPattern": {
+          "type": "string",
+          "default": "// mylog:",
+          "description": "Comment pattern to look for above console.log statements"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
