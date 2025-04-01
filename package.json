@@ -40,7 +40,46 @@
           "description": "Comment pattern to look for above console.log statements"
         }
       }
-    }
+    },
+    "semanticTokenScopes": [
+      {
+        "scope": "mylog",
+        "scopes": {
+          "javascript": [
+            "comment.line.mylog"
+          ],
+          "typescript": [
+            "comment.line.mylog"
+          ]
+        }
+      }
+    ],
+    "semanticTokenColors": {
+      "mylog": {
+        "foreground": "#FFFFFF",
+        "background": "#FF5722",
+        "bold": true
+      }
+    },
+    "grammars": [
+      {
+        "language": "javascript",
+        "scopeName": "source.js",
+        "path": "./syntaxes/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "scopeName": "source.ts",
+        "path": "./syntaxes/javascript.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "MyLog Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mylog-theme.json"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

@@ -1,0 +1,14 @@
+{
+  "name": "MyLog Theme",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": "keyword.control.mylog",
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}
