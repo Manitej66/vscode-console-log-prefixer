@@ -1,9 +1,0 @@
-{
-  "scopeName": "source.js",
-  "patterns": [
-    {
-      "match": "(?<=//\\s*)(mylog:)",
-      "name": "keyword.control.mylog"
-    }
-  ]
-}
